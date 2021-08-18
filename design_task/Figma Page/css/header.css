@@ -1,0 +1,71 @@
+.logo-bg{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    
+}
+.logo-bg img{
+    width: 64px;
+    height: 64px;
+    align-self: center;
+    margin: 0;
+}
+header{
+    padding-top: 14px;
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header button{
+    background:none;
+    width: 162px;
+    height: 54px;
+    border: none;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 0;
+    color: #e5e5e5;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.star-btn{
+    background-image: url("../images/stars_button.png");
+    color: #183754;
+
+}
+
+.planets-btn{
+    background-image: url("../images/planets_button.png");
+}
+
+.meteoroids-btn{
+    background-image: url("../images/meteoroids_button.png");
+}
+
+.wonders-btn{
+    background-image: url("../images/wonders_button.png");
+
+}
+
+header input{
+    width: 464px;
+    height: 53px;
+
+    
+    background: rgba(229, 229, 229, 0.8);
+    border: 1px solid #863B99;
+    box-sizing: border-box; 
+}
+
+.opacity-bg{
+    background-color: black;
+    margin: 3px;
+}

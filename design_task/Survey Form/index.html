@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="center-text">
+            <h1 id="title">Very important survey</h1>
+        </div>
+        <p id="description">It`s a very important survey about everything in the world, please answer some questions for
+            our very
+            important survey about everything in the world</p>
+        <form action="" id="survey-form">
+            <table>
+                <tr>
+                    <td><label for="name" id="name-label">What`s your name?</label></td>
+                    <td><input type="text" id="name" placeholder="Name, please:" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email" id="email-label">What`s your email?</label></td>
+                    <td><input type="text" id="email" placeholder="Email, please:" required></td>
+                </tr>
+                <tr>
+                    <td><label for="number" id="number-label">How old are you?</label></td>
+                    <td><input type="number" id="number" min="0" max="100" placeholder="Age, please:" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dropdown">What`s your gender:</label></td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="none">None of the above</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>What do you like more?</span></td>
+                    <td>
+                        <input type="radio" id="radio1" name="radio">
+                        <label for="radio1">Tea</label>
+
+                        <span>|</span>
+
+                        <input type="radio" id="radio2" name="radio">
+                        <label for="radio2">Cofee</label>
+
+                        <span>|</span>
+
+                        <input type="radio" id="radio3" name="radio">
+                        <label for="radio3">Nothing</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>What colors do you like?</span>
+                    </td>
+                    <td>
+                        <div style="display:inline-flex; width: 100%;">
+                            <div style="width: 50%;">
+                                <div>
+                                    <input type="checkbox" id="red" value="red">
+                                    <label for="red">Red</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" id="green" value="green">
+                                    <label for="green">Green</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" id="blue" value="blue">
+                                    <label for="blue">Blue</label>
+                                </div>
+                            </div>
+                            <div style="width: 50%;">
+                                <div>
+                                    <input type="checkbox" id="yellow" value="yellow">
+                                    <label for="yellow">Yellow</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" id="magenta" value="magenta">
+                                    <label for="magenta">Magenta</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" id="cyan" value="cyan">
+                                    <label for="cyan">Cyan</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+
+            <p>Tell us more about you: </p>
+            <textarea style="width: 100%;" id="person" rows="6"></textarea>
+
+            <div class="center-text" style="margin-top: 20px;">
+                <button class="submit-button" id="submit">Submit</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>

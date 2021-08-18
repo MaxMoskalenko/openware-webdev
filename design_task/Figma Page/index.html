@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Figma page</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/header.css" />
+  <link rel="stylesheet" type="text/css" href="css/form.css" />
+  <link rel="stylesheet" type="text/css" href="css/dropdown.css" />
+
+
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <img src="./images/space_bg.png" alt="" class="bg-image">
+  <header>
+    <div class="logo-bg">
+      <img src="./images/space_logo.png" alt="">
+    </div>
+    <div class="opacity-bg">
+      <input type="text">
+    </div>
+    <div class="opacity-bg">
+      <button class="star-btn">Stars</button>
+    </div>
+    <div class="opacity-bg">
+      <button class="planets-btn">Planets</button>
+    </div>
+    <div class="opacity-bg">
+      <button class="meteoroids-btn">Meteoroids</button>
+    </div>
+    <div class="opacity-bg">
+      <button class="wonders-btn">Space Wonders</button>
+    </div>
+  </header>
+
+  <form action="" id="sign-up">
+    <div class="form-title">
+      <span>Subscribe</span>
+    </div>
+
+
+    <div class="form-text-input">
+      <label for="name">Name</label>
+      <!-- <div class="input-1"></div> -->
+      <input class="input-1" type="text" id="name">
+
+    </div>
+
+    <div class="form-text-input">
+      <label for="email">Email</label>
+      <input class="input-2" type="text" id="email">
+    </div>
+
+    <div class="form-text-input">
+      <label for="password">Password</label>
+      <input class="input-3" type="text" id="password">
+    </div>
+
+    <div class="form-checkbox-input">
+      <input type="checkbox" id="checkbox-1">
+      <label for="checkbox-1">I agree with everything at all</label>
+    </div>
+
+    <div class="form-checkbox-input">
+      <input type="checkbox" id="checkbox-2">
+      <label for="checkbox-2">Send me more about space on email</label>
+    </div>
+
+    <button class="sign-in-button" id="submit">Sign in</button>
+
+    <div class="change-form">
+      <span class="change-form" id="go-to-sign-in">Already have an account?</span>
+    </div>
+
+    <div class="form-footer">
+      <span>Learn more about space with this portal</span>
+    </div>
+
+  </form>
+
+  <form action="" id="sign-in">
+    <div class="form-title sign-in-title">
+      <span>Welcome back</span>
+    </div>
+
+    <div class="form-text-input">
+      <label for="email">Email</label>
+      <input class="input-2" type="text" id="email">
+    </div>
+
+    <div class="form-text-input">
+      <label for="password">Password</label>
+      <input class="input-3" type="text" id="password">
+    </div>
+
+    <button class="sign-in-button" id="submit">Sign in</button>
+
+    <div class="change-form">
+      <span class="change-form" id="go-to-sign-up">Don`t have an account? Sign up now</span>
+    </div>
+  </form>
+
+  <span class="site-title title-1">Explore your</span>
+  <span class="site-title title-2">SPACE</span>
+
+  <button class="arrow-dropdown-closed" id="open-dropdown"></button>
+
+  <div class="dropdown" id="dropdown">
+    <button class="dropdown-btn-1">About us</button>
+    <button class="dropdown-btn-2">External Resources</button>
+    <button class="dropdown-btn-3">Support us</button>
+    <button class="dropdown-btn-4">Follow us in media</button>
+  </div>
+
+  <button class="arrow-dropdown-open" id="close-dropdown"></button>
+
+</body>
+
+
+<script>
+  document.getElementById("open-dropdown").
+    addEventListener("mouseenter", function (event) {
+      document.getElementById("open-dropdown").style.display = "none";
+      document.getElementById("dropdown").style.display = "flex";
+      document.getElementById("close-dropdown").style.display = "block";
+    }, false);
+
+  document.getElementById("dropdown")
+    .addEventListener("mouseleave", function (event) {
+      document.getElementById("open-dropdown").style.display = "block";
+      document.getElementById("dropdown").style.display = "none";
+      document.getElementById("close-dropdown").style.display = "none";
+    }, false);
+
+  document.getElementById("go-to-sign-in").onclick = function (event) {
+    document.getElementById("sign-in").style.display = "block";
+    document.getElementById("sign-up").style.display = "none";
+  };
+
+  document.getElementById("go-to-sign-up").onclick = function (event) {
+    document.getElementById("sign-up").style.display = "block";
+    document.getElementById("sign-in").style.display = "none";
+  };
+
+</script>
+
+</html>
