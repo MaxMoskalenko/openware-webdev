@@ -1,0 +1,71 @@
+.dropdown{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 20%;
+    top: 54%;
+    height: 100%;
+}
+
+.dropdown button{
+    border: none;
+    height: 11%;
+    margin-bottom: 5px;
+    font-color: #183754;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+
+.arrow-dropdown-open{
+    position: absolute;
+
+    display: block;
+    background: none;
+    border: none;
+    background: url("../images/arrow.png") no-repeat center;
+    width: 40px;
+    height: 100px;
+    margin-top: 35%;
+    left: 20%;
+
+}
+
+.arrow-dropdown-closed{
+    background: none;
+    border: none;
+    background: url("../images/arrow.png") no-repeat center;
+    width: 40px;
+    height: 100px;
+    margin-top: 35%;
+}
+
+.dropdown-btn-1{
+    background: url("../images/dropdown-button-1.png") no-repeat;
+}
+.dropdown-btn-2{
+    background: url("../images/dropdown-button-2.png") no-repeat;
+}
+.dropdown-btn-3{
+    background: url("../images/dropdown-button-3.png") no-repeat;
+}
+.dropdown-btn-4{
+    background: url("../images/dropdown-button-4.png") no-repeat;
+}
+
+
+.dropdown-btn-1:hover{
+    background: url("../images/dropdown-button-1-hovered.png") no-repeat;
+}
+.dropdown-btn-2:hover{
+    background: url("../images/dropdown-button-2-hovered.png") no-repeat;
+}
+.dropdown-btn-3:hover{
+    background: url("../images/dropdown-button-3-hovered.png") no-repeat;
+}
+.dropdown-btn-4:hover{
+    background: url("../images/dropdown-button-4-hovered.png") no-repeat;
+}
