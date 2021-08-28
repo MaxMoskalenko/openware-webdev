@@ -1,15 +1,17 @@
 import React from 'react';
 import './css/signin.css';
 
+
 export default class Form extends React.Component {
+
     render() {
         return (
-            <form className="main-form">
+            <div className="main-form">
                 <span>Sign In</span>
                 <Input label="Login:" type="text" />
                 <Input label="Password:" type="password" />
-                <SubmitBtn />
-            </form>
+                <SubmitBtn changeState={this.props.changeState} />
+            </div>
         );
     }
 }
@@ -28,7 +30,7 @@ class Input extends React.Component {
 class SubmitBtn extends React.Component {
     render() {
         return (
-            <button>Sign In</button>
+            <button onClick={() => { this.props.changeState(); }}>Sign In</button>
         );
     }
 }
