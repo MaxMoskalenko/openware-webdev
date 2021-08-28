@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+
+.bg-image{
+    z-index: -100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* left: -296px; */
+    /* top: -55px; */
+    opacity: 66%;
+    margin: 0;
+}
+
+
+button{
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+.site-title{
+    font-family: 'Abel', sans-serif;
+    font-size: 144px;
+    color: #e5e5e5;
+    position: absolute;
+}
+
+.title-1{
+    left: 5%;
+    margin-top: 7%;
+}
+
+.title-2{
+    left: 35%;
+    margin-top: 20%;
+}
+

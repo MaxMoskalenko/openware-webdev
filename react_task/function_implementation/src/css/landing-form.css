@@ -1,0 +1,136 @@
+.landing-form{
+    position: absolute;
+    width: 32%;
+    height: 75%;
+    left: 60%;
+    top: 16%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 6px 12px #FFFFFF;
+
+    font-family: 'Rubik', sans-serif;
+    color: #183754;
+
+    
+}
+#sign-in{
+    display: none;
+}
+
+.form-title{
+    text-align: center;
+    font-size: 40px;
+    margin: 13px;
+}
+
+.landing-form label{
+    /* position: relative; */
+    font-size: 16px;
+}
+
+.form-text-input{
+    width: 100%;
+    margin-bottom: 4%;
+    margin-left: 4%;
+    height: 9%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+
+}
+
+.landing-form input[type="text"]{
+    position: absolute;
+    left: 30%;
+    width: 60%;
+    height: 50px;
+    padding-left: 20px;
+
+    border: none;
+    background-size: contain;
+
+    font-size: 16px;
+    align-content: center;
+    
+
+}
+
+.input-1{
+    background: url(../images/form-input-1.png) no-repeat center;
+}
+
+.input-2{
+    background: url(../images/form-input-2.png) no-repeat center;
+}
+
+.input-3{
+    background: url(../images/form-input-3.png) no-repeat center;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    border-color: #183754;
+    margin-right: 11px;
+
+    border-radius: 11px;
+}
+
+.form-checkbox-input{
+    margin-bottom: 16px;
+    margin-left: 4%;
+
+    display: flex;
+    align-items: center;
+}
+
+.sign-in-button{
+    background: none;
+    border: 2px solid #157AA6;
+    color: #157AA6;
+    font-family: 'Rubik', sans-serif;
+
+    width: 50%;
+    height: 11%;
+    border-radius: 11px;
+    font-size: 24px;
+    cursor: pointer;
+
+    position: relative;
+    left: 25%;
+    margin-top: 15%;
+}
+
+.sign-in-button:hover{
+    background-color: #157AA6;
+    color: #FFFFFF;
+}
+
+
+.change-form span{
+    cursor: pointer;
+
+}
+
+.change-form{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 14px;
+}
+
+.form-footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+    font-size: 22px;
+}
+
+.sign-in-title{
+    margin-bottom: 20%;
+}

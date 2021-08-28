@@ -1,0 +1,65 @@
+.forecast-bg {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 12px #FFFFFF;
+
+    font-family: 'Rubik', sans-serif;
+    color: #183754;
+
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 700px;
+    top: 100px;
+
+}
+
+.forecast-header {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.forecast-header span{
+    position: relative;
+    left:0%;
+    font-size: 40px;
+    margin-left: 10px;
+
+}
+
+.forecast-header input{
+    position: fixed;
+    left: 50%;
+    height: 50px;
+    width: 29%;
+    padding-left: 5px;
+}
+
+.forecast-table{
+    width: 100%;
+    height: 80%;
+}
+
+.forecast-table thead{
+    height: 20%;
+}
+
+.forecast-table td{
+    text-align: center;
+}
+
+.forecast-table td, .forecast-table th {
+    width: 25%;
+}
+
+.bordered{
+    border-bottom: 2px solid #183754;
+}
+
+.hint{
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+}
