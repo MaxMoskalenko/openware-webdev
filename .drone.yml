@@ -23,7 +23,7 @@ steps:
     - image_id=$(echo $image | cut -d' ' -f 3)
     - image_tag=$(echo maxmoskalenko/supabase_app:${image_id:0:7})
     - docker tag $image_id $image_tag
-    - docker push maxmoskalenko/supabase_app:${image_id:0:7}
+    - docker push $image_tag
 
 trigger:
   branch:
