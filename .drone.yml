@@ -13,6 +13,7 @@ steps:
     - cd supabase_task
     - npm install
     - npm run build
+    
 - name: "Build docker image"
     image: plugins/docker
     commands:
