@@ -15,7 +15,7 @@ steps:
     - npm run build
 
 - name: "Build docker image"
-  image: docker:alpine
+  image: plugins/docker
   commands:
     - cd supabase_task
     - docker build . -t supabase-app
