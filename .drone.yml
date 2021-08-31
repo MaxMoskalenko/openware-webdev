@@ -4,11 +4,12 @@ name: default
 
 steps:
 - name: "Verify & build"
-  image: node:alpine
+  image: next:alpine
   commands:
     - cd supabase_task
+    - npm install
     - npm run build
-    - npm start
+    - npm run start
      
 trigger:
   branch:
