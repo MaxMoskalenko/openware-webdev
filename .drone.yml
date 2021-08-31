@@ -13,7 +13,6 @@ steps:
     - cd supabase_task
     - npm install
     - npm run build
-    - npm run start
      
 trigger:
   branch:
