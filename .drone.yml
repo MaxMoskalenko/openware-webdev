@@ -6,6 +6,7 @@ steps:
 - name: "Verify & build"
   image: node:alpine
   commands:
+    - cd supabase_task
     - npm run build
     - npm start
      
