@@ -15,14 +15,14 @@ steps:
     - npm run build
 
 - name: "Build docker image"
-  image: plugins/docker
+  image: docker:alpine
   commands:
     - cd supabase_task
     - docker build . -t supabase-app
     - image_line=$(docker image ls | grep "supabase-app")
     - image_id=$(echo $image | cut -d' ' -f 3)
-    - docker tag $image_id maxmoskalenko/supabase_app:${image_id:1:2}
-    - docker push maxmoskalenko/supabase_app:${image_id:1:2}
+    - docker tag $image_id maxmoskalenko/supabase_app:${image_id:0:7}
+    - docker push maxmoskalenko/supabase_app:${image_id:0:7}
 
 trigger:
   branch:
