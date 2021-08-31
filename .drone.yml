@@ -1,10 +1,9 @@
 kind: pipeline
-type: docker
-name: default
+name: "Supabase task CI/CD part"
 
 steps:
 - name: "Verify & build"
-  image: next:alpine
+  image: node:alpine
   commands:
     - cd supabase_task
     - npm install
