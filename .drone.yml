@@ -21,7 +21,8 @@ steps:
     - docker build . -t supabase-app
     - image_line=$(docker image ls | grep "supabase-app")
     - image_id=$(echo $image | cut -d' ' -f 3)
-    - docker tag $image_id maxmoskalenko/supabase_app:${image_id:0:7}
+    - image_tag=$(echo maxmoskalenko/supabase_app:${image_id:0:7})
+    - docker tag $image_id $image_tag
     - docker push maxmoskalenko/supabase_app:${image_id:0:7}
 
 trigger:
