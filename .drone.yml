@@ -13,7 +13,16 @@ steps:
     - cd supabase_task
     - npm install
     - npm run build
-     
+- name: "Build docker image"
+    image: plugins/docker
+    commands:
+      - cd supabase_task
+      - docker build . -t supabase-app
+      - image_line=$(docker image ls | grep "supabase-app")
+      - image_id=$(echo $image | cut -d' ' -f 3)
+      - docker tag $image_id maxmoskalenko/supabase_app:${image_id:1:2}
+      - docker push maxmoskalenko/supabase_app:${image_id:1:2}
+
 trigger:
   branch:
     - dev
