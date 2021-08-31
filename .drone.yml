@@ -1,6 +1,5 @@
 kind: pipeline
-type: docker
-name: default
+name: "Supabase task CI/CD part"
 
 steps:
 - name: "Verify & build"
