@@ -4,6 +4,11 @@ name: "Supabase task CI/CD part"
 steps:
 - name: "Verify & build"
   image: node:alpine
+  environment:
+    NEXT_PUBLIC_SUPABASE_URL:
+      from_secret: base_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY:
+      from_secret: anon_key
   commands:
     - cd supabase_task
     - npm install
