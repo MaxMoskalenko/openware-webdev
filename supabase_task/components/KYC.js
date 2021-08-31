@@ -16,7 +16,7 @@ export default function KYC({ session, handleSignOut }) {
     async function getProfile() {
         try {
             setLoading(true)
-            const user = supabase.auth.user()
+            const user = await supabase.auth.user()
 
             let { data, error, status } = await supabase
                 .from('user_data')
