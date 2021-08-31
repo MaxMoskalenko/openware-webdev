@@ -1,0 +1,16 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: "Verify & build"
+  image: node:alpine
+  commands:
+    - npm run build
+    - npm start
+     
+trigger:
+  branch:
+    - dev
+  event:
+    - push
