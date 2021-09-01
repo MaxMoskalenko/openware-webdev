@@ -19,6 +19,10 @@ steps:
   environment:
     TOKEN:
       from_secret: docker_token
+    NEXT_PUBLIC_SUPABASE_URL:
+      from_secret: base_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY:
+      from_secret: anon_key
   settings:
     repo: docker.io/maxmoskalenko/supabase_app
     tags: [ "${DRONE_COMMIT_SHA:0:7}","latest" ]
