@@ -16,13 +16,18 @@ steps:
 
 - name: "Build docker image"
   image: plugins/docker
+  environment:
+    TOKEN:
+      from_secret: docker_token
   settings:
     repo: docker.io/maxmoskalenko/supabase_app
     tags: [ "${DRONE_COMMIT_SHA:0:7}","latest" ]
     username:
-      from_secret: DOCKERUSER
+      from_secret: docker_user
     password:
-      from_secret: DOCKERPASS
+      from_secret: docker_pass
+    build_args_from_env:
+      - TOKEN
   commands:
     - cd supabase_task
     - docker build . -t supabase-app
