@@ -34,9 +34,6 @@ steps:
       - TOKEN
       - NEXT_PUBLIC_SUPABASE_ANON_KEY
       - NEXT_PUBLIC_SUPABASE_URL
-    build_args:
-      - NEXT_PUBLIC_SUPABASE_ANON_KEY=NEXT_PUBLIC_SUPABASE_ANON_KEY
-      - NEXT_PUBLIC_SUPABASE_URL=NEXT_PUBLIC_SUPABASE_URL
     dockerfile: supabase_task/Dockerfile
 
 trigger:
