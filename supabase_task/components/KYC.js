@@ -17,6 +17,10 @@ export default function KYC({ session, handleSignOut }) {
         try {
             setLoading(true)
             const user = supabase.auth.user()
+
+            // while (!user) {
+            //     user = supabase.auth.user()
+            // }
             console.log(supabase);
             console.log(user);
 
@@ -43,7 +47,11 @@ export default function KYC({ session, handleSignOut }) {
                     ])
             }
         } catch (error) {
-            alert(error.message)
+            if (error.message == "Cannot read property 'id' of null") {
+                document.location.reload();
+            } else {
+                alert(error.message)
+            }
         } finally {
             setLoading(false)
         }
