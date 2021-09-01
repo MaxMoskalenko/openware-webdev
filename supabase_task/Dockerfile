@@ -13,6 +13,8 @@ RUN npm install
 
 COPY supabase_task/. /usr/src/app
 
+ENTRYPOINT echo $NEXT_PUBLIC_SUPABASE_ANON_KEY
+
 RUN npm run build
 
 ENTRYPOINT ["npm", "start"]
