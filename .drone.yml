@@ -28,6 +28,7 @@ steps:
       from_secret: docker_pass
     build_args_from_env:
       - TOKEN
+    dockerfile: supabase_task/Dockerfile
 
 trigger:
   branch:
